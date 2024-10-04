@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clothes merchandise web store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<section id="banner">
+    <img src="images/logo%203.png" class="logo">
+    <div class="banner-text">
+        <div class="text-background">
+            <h1>Fashionable Tshirts Shoes Jeans</h1>
+            <p>Choose your fashion</p>
+        </div>
+        <div class="banner-btn">
+            <a href="#"><span></span>Find out</a>
+            <a href="#"><span></span>Read more</a>
+        </div>
+    </div>
+</section>
+
+<div id="sideNav">
+    <nav>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">TSHIRTS</a></li>
+            <li><a href="#">JEANS</a></li>
+            <li><a href="#">SHOES</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div id="menuBtn">
+    <img src="images/17.png">
+</div>
+
+<!--tshirt-->
+<section id="TSHIRTS">
+    <div class="title-text">
+        <p>TSHIRTS</p>
+        <h1>Fashionable Tshirts</h1>
+    </div>
+    <div class="tshirts-box">
+        <div class="TSHIRTS">
+            <h1>Cotton Tshirts</h1>
+        </div>
+        <div class="TSHIRTS-desc">
+            <div class="TSHIRTS-icon"></div>
+            <div class="TSHIRTS-text">
+                <p>High quality cotton tshirts at reasonable prices.</p>
+            </div>
+        </div>
+        <div class="TSHIRTS-img">
+            <img src="images/19.jpg">
+        </div>
+    </div>
+</section>
+
+<script>
+var menuBtn = document.getElementById("menuBtn");
+var sideNav = document.getElementById("sideNav");
+
+menuBtn.onclick = function() {
+    if (sideNav.style.right === "-250px") {
+        sideNav.style.right = "0";
+    } else {
+        sideNav.style.right = "-250px";
+    }
+}
+</script>
+
+</body>
+</html>
